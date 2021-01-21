@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+	<h1>Заполните анкету</h1>
+	<form method='post'>
+		<input type="text" name="username" id="username" class="form-control" placeholder='Имя (Господин Сер Кирюха)'><br>
+		<input type="text" name="sex" id="sex" class="form-control" placeholder='Пол (Деревянный)'><br>
+		<input type="submit" class="btn btn-success" value='Зарегистрироваться'>
+	</form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ user.username }}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+	<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">{{ user.sex }}</strong>
+        <h3 class="mb-0">{{ user.username }}</h3>
+        <div class="mb-1 text-muted">{{ user.datetime_of_registration.date() }}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
